@@ -1,0 +1,96 @@
+* {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.calculator{
+  display: inline-block;
+  border: solid;
+  color: rgb(212, 39, 212);
+}
+/* [works] */
+body {
+  background-image: url("Halloween1.jpg"), url("paper.gif");
+  background-color: #c4a7a7;
+}
+/* [works] */
+.container{
+  display: grid;
+  width: 100px;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-template-rows: repeat(5, 30px);
+  gap: 1px;
+  
+ /* this is an error related to internet explorer compatability */
+}
+
+.lcd{
+  display: grid;
+  width: 100px;
+  grid-template-columns: 58px 175px;
+  grid-template-rows: 30px;
+  gap: 1px;
+}
+/* idea for off-set-columns use 100px 60%px; */
+/* <a href="#" class="myButton">blue</a> */
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+/* [works] */
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+/* [works] */
+.myButton:active {
+	position:relative;
+	top:1px;
+} 
+/* [works] */
+.box {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 4px 4px rgba(red, green, blue, alpha);
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.clear {
+  background-color: rgb(253, 74, 19);
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+}
+
+/* .display {
+  background-color: rgb(245, 6, 6);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+} */
+.display{
+
+}
+
+
+
+
+/* | Mockup                       | In Action                    |
+| ---------------------------- | ---------------------------- |
+| ![](calculator.jpg) | ![](calculator-in-action.gif) | */
